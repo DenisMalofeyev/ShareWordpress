@@ -10,7 +10,7 @@ function shareArticleToWP(id) {
 			parameters: query,
 			onComplete: function(transport) {
 				var ti = JSON.parse(transport.responseText);
-				var share_url = "http://denis1986.esy.es/newsimporter/wp-admin/press-this.php?v=8&u=" + param_escape(ti.link) + "&t=" + param_escape(ti.title);
+				var share_url = "http://yoursite.com/wp-admin/press-this.php?v=8&u=" + param_escape(ti.link) + "&t=" + param_escape(ti.title);
 w.location.href = share_url;
 			}
 		});
